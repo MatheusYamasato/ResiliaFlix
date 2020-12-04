@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: cornsilk;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+strong {
+    color: rgba(255, 255, 0, 0.952);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: black;
+    font-style: italic;
+}
+
+.link-content {
+    display: flex;
+    text-decoration: none;
+}
+
+.link-content li {
+    list-style: none;
+    margin: auto 16px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+}
+
+.link-content li a {
+    text-decoration: none;
+    color: black;
+    font-family: bold;
+}
+
+.link-content li a:hover {
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.div-footer {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
+}
+
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.719);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    padding: 30px;
+}
+
+li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.imgLogo {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+
+.copyRights {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-left: 25px;
+}
