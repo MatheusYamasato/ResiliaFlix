@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto';
-    background-color: cornsilk;
+    background-color: whitesmoke;
 }
 
 .header-content {
@@ -57,11 +57,23 @@ strong {
     color: rgba(0, 0, 0, 0.719);
 }
 
-.div-footer {
-    position: absolute;
-    bottom:0;
+.menuContainer {
+    margin-top: 5px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.logoFilme {
+    height: 250px;
+    width: 250px;
+}
+
+.div-footer {
+    position: fixed;
+    bottom:0;
+    width: 100%
 }
 
 .footer-container {
