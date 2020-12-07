@@ -5,6 +5,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto';
     background-color: whitesmoke;
 }
@@ -24,8 +26,8 @@ strong {
     width: 940px;
     margin: 0 auto;
 }
-
-.logo {
+ 
+.logo{
     color: black;
     font-style: italic;
 }
@@ -59,47 +61,58 @@ strong {
 
 .menuContainer {
     margin-top: 5px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .logoFilme {
     height: 250px;
-    width: 250px;
-}
-
-.div-footer {
-    position: fixed;
-    bottom:0;
-    width: 100%
-}
-
-.footer-container {
-    background-color: rgba(0, 0, 0, 0.719);
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom:0;
-    width: 100%;
-    padding: 30px;
+    width: 270px;
 }
 
 li {
     list-style: none;
-    margin-left: 25px;
 }
 
-.imgLogo {
-    width: 25px;
-    height: 25px;
-    display: flex;
+footer {
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    padding: 16px;
+    position: relative;
+    bottom: 0;
 }
 
-.copyRights {
+.footer-box, .copyRights{
     display: flex;
     justify-content: center;
-    color: black;
+}
+
+.logoRede {
+    height: 20px;
+    width: 20px;
+}
+
+.linkLogo {
     margin-left: 25px;
+}
+
+/* mobile */
+@media(max-width:768px) {
+    .nav-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        align-content: center;
+    }
+
+    main {
+        height: 500vh;
+    }
+
 }
