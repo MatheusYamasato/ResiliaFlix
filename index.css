@@ -27,7 +27,7 @@ strong {
     margin: 0 auto;
 }
  
-.logo{
+.logo {
     color: black;
     font-style: italic;
 }
@@ -60,12 +60,12 @@ strong {
 }
 
 .menuContainer {
-    margin-top: 5px;
-    height: 600px;
+    margin: 5px;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .logoFilme {
@@ -80,7 +80,7 @@ li {
 footer {
     background-color: rgba(0, 0, 0, 0.719);
     width: 100%;
-    padding: 16px;
+    padding: 20px;
     position: relative;
     bottom: 0;
 }
@@ -99,12 +99,25 @@ footer {
     margin-left: 25px;
 }
 
+
 /* mobile */
-@media(max-width:768px) {
+@media screen and (min-width: 267px) and (max-width:768px) {
     .nav-content {
         width: 100%;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .link-content {
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
     }
 
     .logo {
@@ -112,7 +125,18 @@ footer {
     }
 
     main {
-        height: 500vh;
+        height: 100%;
     }
 
+    .menuContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;   
+    }
+
+    .logoFilme {
+        height: 175px;
+        width: 175px;
+        margin-left: 5px;
+    }
 }
